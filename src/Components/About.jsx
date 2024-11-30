@@ -5,6 +5,7 @@
  */
 
 import React from "react";
+import Skills from "./Skills";
 
 /**
  * About background image
@@ -16,68 +17,59 @@ import React from "react";
  * Need an image? Check out https://unsplash.com to download a image you
  * freely use on your site.
  */
-import image from "../images/motion-background.jpg";
+//import image from "../images/motion-background.jpg";
 
-const imageAltText = "purple and blue abstract background";
+//const imageAltText = "purple and blue abstract background";
 
 /**
  * Sort description that expands on your title on the Home component.
  */
 const description =
-  "I'm a UI/UX student studying at Barnett Technical University. I enjoy creating unique and simplistic user interfaces in creative ways.";
+  "I am a beginner in front-end developement and i love to learn and build projects and excited to continue improving my skills every day.";
 
 /**
  * List of some of skills or technologies you work on, are learning,
  * passionate about, or enjoy,
  */
-const skillsList = [
+/*const skillsList = [
   "HTML- Hyper Text Markup Language",
   "CSS- Cascading Style sheets",
   "Javascript",
   "Js Framework : React.Js",
   "CSS framework : Tailwind",
-];
+];*/
 
 /**
  * Use this to give more information about what you are passionate about,
  * how you best work, or even a quote. This will help someone learn more
  * about you on a professional level.
+ * <img className="background" src={image} alt={imageAltText} />
  */
 const detailOrQuote =
-  "I am passionate about solving problems in new creative ways to drive innovation. By leveraging my UI/UX experience I continually look for new and better ways to make tech accessible by all.";
+  "I am passionate about designing websites in new creative ways to drive innovation.";
 
 const About = () => {
   return (
-    <section className="padding" id="about">
-      <img className="background" src={image} alt={imageAltText} />
+    <section className="padding" id="about" style={{ background: " #343a40" }}>
+     
       <div
         style={{
-          backgroundColor: "white",
-          width: "50%",
-          padding: "4rem",
-          margin: "3rem auto",
+          backgroundColor: "#6c757d",
+          width: "40%",
+          padding: "2rem",
+          margin: "auto",
           textAlign: "center",
+          color: "white",
+          border : "1px solid #6c757d ",
         }}
       >
         <h2>About Myself</h2>
         <p className="large">{description}</p>
-        <hr />
-        <ul
-          style={{
-            textAlign: "left",
-            columns: 2,
-            fontSize: "1.25rem",
-            margin: "2rem 3rem",
-            gap: "3rem",
-          }}
-        >
-          {skillsList.map((skill) => (
-            <li key={skill}>{skill}</li>
-          ))}
-        </ul>
-        <hr />
-        <p style={{ padding: "1rem 3rem 0" }}>{detailOrQuote}</p>
-      </div>
+        <p className="large">{detailOrQuote}</p>
+   </div>
+   <div>
+      <Skills/>
+   </div>
     </section>
   );
 };
