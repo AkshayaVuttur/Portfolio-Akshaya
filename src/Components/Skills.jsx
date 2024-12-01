@@ -20,7 +20,7 @@ const Skills = () => {
         <div className="skillBar">
           <div className="skillBarText">
             <h2>CSS</h2>
-            <p>HTML structures web content for browsers</p>
+            <p>CSS styles web pages, enhancing presentation.</p>
           </div>
         </div>
       </div>
@@ -28,7 +28,7 @@ const Skills = () => {
         <div className="skillBar">
           <div className="skillBarText">
             <h2>Javascript</h2>
-            <p>HTML structures web content for browsers</p>
+            <p> JavaScript enables dynamic, interactive web functionality.</p>
           </div>
         </div>
       </div>
@@ -36,7 +36,7 @@ const Skills = () => {
         <div className="skillBar">
           <div className="skillBarText">
             <h2>React Js</h2>
-            <p>HTML structures web content for browsers</p>
+            <p>React JavaScript builds interactive user interfaces.</p>
           </div>
         </div>
       </div>
@@ -44,7 +44,7 @@ const Skills = () => {
         <div className="skillBar">
           <div className="skillBarText">
             <h2>Tailwind CSS</h2>
-            <p>HTML structures web content for browsers</p>
+            <p>Tailwind CSS provides utility-first styling framework.</p>
           </div>
         </div>
       </div>

@@ -9,6 +9,8 @@
  */
 
 import React from "react";
+import project1Image from "../images/project1.jpeg";
+import project2Image from "../images/project2.jpg";
 
 /**
  * Desk image
@@ -45,36 +47,36 @@ import React from "react";
     description:
       "Video interview to explain when to use GitHub.dev versus GitHub Codespaces, and how best to use each tool.",
     url: "https://www.youtube.com/watch?v=c3hHhRME_XI",
+    "/workspaces/Portfolio-Akshaya/src/images/project2.PNG"
   }, */
 const projectList = [
   {
     title: " Web Shop",
     description:
-      " Tools : HTML CSS JavaScript React js Tailwind CSS  This is a e-commerce project that has features product selection by category and online order tracking for a seamless shopping experience.",
-   
+      " This is a e-commerce project that has features product selection by category and online order tracking for a seamless shopping experience.",
+      img: project2Image,
   },
   {
     title: " Interactive Quiz website",
     description:
-      "Contributed sketch note imagery to accompany each lesson. These help provide visual representation of what is being taught.",
-    
-  },
+      "Designed an interactive quiz app using HTML, CSS, and JavaScript to provide a user-friendly platform for testing knowledge across categories, offering a score in percentage based on performance within a set time.",
+      img: project1Image,
+  }
  
 ];
 
 const Portfolio = () => {
   return (
     <section className="padding" id="portfolio">
-      <h2 style={{ textAlign: "center" }}>Projects</h2>
+      <h2 style={{ textAlign: "center", color:"white" }}>Projects</h2>
       <div style={{ display: "flex", flexDirection: "row", paddingTop: "3rem" }}>
         <div style={{ maxWidth: "40%", alignSelf: "center" }}>     
         </div>
         <div className="container">
           {projectList.map((project) => (
             <div className="box" key={project.title}>
-              <a href={project.url} target="_blank" rel="noopener noreferrer">
                 <h3 style={{ flexBasis: "40px" }}>{project.title}</h3>
-              </a>
+                <img src={project.img} alt={project.title} style={{ width: "220px",height:"150px", border:"1px solid grey", borderRadius:"20px", marginLeft:"10%"}} />
               <p className="small">{project.description}</p>
             </div>
           ))}

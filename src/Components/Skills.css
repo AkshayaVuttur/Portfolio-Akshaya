@@ -11,6 +11,7 @@ color: white;
  display: flex;
  flex-direction: row;
  flex-wrap: wrap;
+ width: 120%;
 }
 #skills {   
     overflow: hidden;
@@ -42,7 +43,7 @@ color: white;
     .skillBars {
     margin: 1.5rem;
     width: 25vw
-    max-width: 80%;
+    max-width: 60%;
     text-align: left;
     
      }   

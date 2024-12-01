@@ -45,7 +45,12 @@ const App = () => {
       <Home name={siteProps.name} title={siteProps.title} />
       <About />
       <Portfolio />
-      <Footer {...siteProps} primaryColor={primaryColor} secondaryColor={secondaryColor} />
+      <Footer
+     email="akshayavuttur@gmail.com"
+    linkedIn="vuttur-akshaya-25970a254"
+    name="Akshaya Vuttur"
+    primaryColor="#343a40" 
+    />
     </div>
   );
 };
