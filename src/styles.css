@@ -26,7 +26,7 @@ section {
 }
 
 section.min-height {
-  min-height: 100vh;
+  min-height: 80vh;
 }
 
 section.padding {
@@ -100,7 +100,7 @@ a {
 }
 
 a:hover {
-  color: aqua;
+  color: rgb(141, 167, 167);
 }
 
 .container {
@@ -108,6 +108,7 @@ a:hover {
   grid-gap: 20px;
   grid-template-columns: 330px 300px;
   margin: 20px auto;
+  background-color: rgb(108, 117, 125);
 }
 
 .container .box {
@@ -123,4 +124,22 @@ a:hover {
 img.socialIcon {
   height: 30px;
   width: 30px;
+}
+#portfolio{
+  background:rgb(48, 48, 48);
+}
+#about{
+  background:rgb(48, 48, 48);
+}
+#home{
+  background:rgb(48, 48, 48);
+
+}
+.imagediv{
+  display: flex;
+  flex-direction: row;
+}
+#homeone{
+display: flex;
+flex-direction: column;
 }

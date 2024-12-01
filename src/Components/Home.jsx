@@ -6,9 +6,10 @@
  */
 
 import React from "react";
-import arrowSvg from "../images/down-arrow.svg";
-import PropTypes from "prop-types";
 
+import PropTypes from "prop-types";
+import image from "../images/dp1.jpg"
+import   './Skills.css';
 /**
  * Home background image
  *
@@ -22,19 +23,22 @@ import PropTypes from "prop-types";
  */
 //import image from "../images/Background.avif" <img className="background" src={image} alt="" />;
 
-const imageAltText = "Adult female in office setting leaning against a glass wall while holding a platinum Microsoft Surface Pro 7 in tablet mode preparing to write with Microsoft Surface Pen";
+
 
 const Home = ({ name, title }) => {
   return (
-    <section id="home" className="min-height" style={{ background: " #343a40" }} >
-      
-      <div style={{ position: "absolute", top: "5rem", left: "2rem", width: "17rem" }}>
-        <h1 style={{ color: " grey" }}>{name}</h1>
-        <h2 style={{ color: " grey" }}>{title}</h2>
+    <section id="home" className="min-height"  >   
+      <div  style={{ position: "absolute", top: "5rem", left: "2rem", width: "40rem", display:"flex", flexDirection : "row",  margin :"10%", paddingLeft:"20%"}}>
+      <div>
+        <img src={image}  alt="dp1" style={{ width: "250px" , height:"250px" , border : "1px solid grey", borderRadius:"50%"}}></img>
+        </div>
+        <div>
+        <h1 style={{ color: " white" , fontSize : "80px" , paddingLeft:"2%", width:"80vw", paddingTop:"60px"}}>{name}</h1>
+        <h2 style={{ color: " white" , paddingLeft:"9%"}}>{title}</h2>
+        </div>
+        
       </div>
-      <div style={{ position: "absolute", bottom: "3rem", left: "50%" }}>
-        <img src={arrowSvg} style={{ height: "3rem", width: "3rem" }} alt={imageAltText} />
-      </div>
+     
     </section>
   );
 };

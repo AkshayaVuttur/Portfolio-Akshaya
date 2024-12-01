@@ -17,7 +17,7 @@ import Skills from "./Skills";
  * Need an image? Check out https://unsplash.com to download a image you
  * freely use on your site.
  */
-//import image from "../images/motion-background.jpg";
+import image from "../images/profile.jpeg";
 
 //const imageAltText = "purple and blue abstract background";
 
@@ -50,11 +50,10 @@ const detailOrQuote =
 
 const About = () => {
   return (
-    <section className="padding" id="about" style={{ background: " #343a40" }}>
+    <section className="padding" id="about" >
      
       <div
         style={{
-          backgroundColor: "#6c757d",
           width: "40%",
           padding: "2rem",
           margin: "auto",
@@ -63,7 +62,10 @@ const About = () => {
           border : "1px solid #6c757d ",
         }}
       >
-        <h2>About Myself</h2>
+        <div className="imagediv">
+        <img src={image} alt="profile"style={{ width: "150px" , height:"150px"}}></img>
+        <h2 style={{ padding: "40px 40px 40px 150px" }}>About Myself</h2>
+        </div>
         <p className="large">{description}</p>
         <p className="large">{detailOrQuote}</p>
    </div>

@@ -1,18 +1,53 @@
 import React from 'react';
-import html from '../images/html'; 
+import   './Skills.css';
+
+//import {htmlll} from '../images/htmlll.png'; <img src={htmlll} alt="UIDesign" className="skillBarImg" /> 
 
 const Skills = () => {
   return (
-    <div>
-      <span className="skillDesc">I am a skilled and passionate web designer with experience </span>
+    <div className='main'>
+     <span className="skillDesc">Skills </span>
+     <div className='First'>
       <div className="skillBars">
         <div className="skillBar">
-          <img src={html} alt="UIDesign" className="skillBarImg" />
           <div className="skillBarText">
-            <h2>UI/UX Design</h2>
-            <p>This is a demo text, you can write your own content here</p>
+            <h2>HTML</h2>
+            <p>HTML structures web content for browsers</p>
           </div>
         </div>
+      </div>
+      <div className="skillBars">
+        <div className="skillBar">
+          <div className="skillBarText">
+            <h2>CSS</h2>
+            <p>HTML structures web content for browsers</p>
+          </div>
+        </div>
+      </div>
+      <div className="skillBars">
+        <div className="skillBar">
+          <div className="skillBarText">
+            <h2>Javascript</h2>
+            <p>HTML structures web content for browsers</p>
+          </div>
+        </div>
+      </div>
+      <div className="skillBars">
+        <div className="skillBar">
+          <div className="skillBarText">
+            <h2>React Js</h2>
+            <p>HTML structures web content for browsers</p>
+          </div>
+        </div>
+      </div>
+      <div className="skillBars">
+        <div className="skillBar">
+          <div className="skillBarText">
+            <h2>Tailwind CSS</h2>
+            <p>HTML structures web content for browsers</p>
+          </div>
+        </div>
+      </div>
       </div>
     </div>
   );

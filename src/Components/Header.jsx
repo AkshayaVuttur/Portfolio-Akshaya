@@ -8,7 +8,7 @@ import React from "react";
 
 const Header = () => {
   return (
-    <div
+    <div className="Header"
       style={{
         position: "fixed",
         display: "flex",
